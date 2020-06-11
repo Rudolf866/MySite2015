@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Слайдер на всю ширину экрана</title>
+		<meta name="description" content="Blueprint: " />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css2/default.css" />
+		<link rel="stylesheet" type="text/css" href="css2/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<style>
+    
+        body
+        {
+            background: url('pictures/abc.jpg') no-repeat;
+            background-size: cover;
+        }
+        
+        
+    .push_button {
+    position: relative;
+    width:220px;
+    height:40px;
+    text-align:center;
+    color:#FFF;
+    text-decoration:none;
+    line-height:43px;
+    font-family:'Oswald', Helvetica;
+    display: block;
+    margin: 30px 0;
+}
+.push_button:before {
+    background:#f0f0f0;
+    background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#D0D0D0), to(#f0f0f0));
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;  
+    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; 
+    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF; 
+    box-shadow:0 1px 2px rgba(0, 0, 0, .5) inset, 0 1px 0 #FFF;
+    position: absolute;
+    content: "";
+    left: -6px; right: -6px;
+    top: -6px; bottom: -10px;
+    z-index: -1;
+}
+.push_button:active {
+    -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+    top:5px;
+}
+.push_button:active:before{
+    top: -11px;
+    bottom: -5px;
+    content: "";
+}
+.red_push {
+    text-shadow:-1px -1px 0 #A84155;
+    background: #D25068;
+    text-transform: uppercase;
+    border:1px solid #D25068;
+    background-image:-webkit-linear-gradient(top, #F66C7B, #D25068);
+    background-image:-moz-linear-gradient(top, #F66C7B, #D25068);
+    background-image:-ms-linear-gradient(top, #F66C7B, #D25068);
+    background-image:-o-linear-gradient(top, #F66C7B, #D25068);
+    background-image:linear-gradient(to bottom, #F66C7B, #D25068);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;  
+    -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+    -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+    box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+}
+.red_push:hover {
+    background: #F66C7B;
+    color: #fff;
+    background-image:-webkit-linear-gradient(top, #D25068, #F66C7B);
+    background-image:-moz-linear-gradient(top, #D25068, #F66C7B);
+    background-image:-ms-linear-gradient(top, #D25068, #F66C7B);
+    background-image:-o-linear-gradient(top, #D25068, #F66C7B);
+    background-image:linear-gradient(top, #D25068, #F66C7B);
+}
+    
+    </style>
+	<body>
+	<a class="push_button red_push" href="mysite.html">Назад</a>
+	
+		<div class="container">	
+			<div id="cbp-fwslider" class="cbp-fwslider">
+				<ul>
+					<li><a href="pictures/2.jpg" download=""><img src="pictures/2.jpg" alt="img01"/></a></li>
+					<li><a href="pictures/3.jpg"download="" ><img src="pictures/3.jpg" alt="img02"/></a></li>
+					               <li><a href="pictures/7.jpg" download=""><img src="pictures/7.jpg" alt="img03"/></a></li>
+					<li><a href="pictures/4.jpg"download="" ><img src="pictures/4.jpg" alt="img04"/></a></li>
+					<li><a href="pictures/5.jpg" download=""><img src="pictures/5.jpg" alt="img05"/></a></li>
+                            <li><a href="pictures/6.jpg" download=""><img src="pictures/6.jpg" alt="img05"/></a></li>
+                            <li><a href="pictures/8.jpg" download=""><img src="pictures/8.jpg" alt="img05"/></a></li>
+                                    <li><a href="pictures/9.jpg" download=""><img src="pictures/9.jpg" alt="img05"/></a></li>
+                            <li><a href="pictures/10.jpg"download="" ><img src="pictures/10.jpg" alt="img05"/></a></li>
+          <li><a href="pictures/11.jpg" download=""><img src="pictures/11.jpg" alt="img05"/></a></li>
+                            <li><a href="pictures/12.jpg"download="" ><img src="pictures/12.jpg" alt="img05"/></a></li>
+                        <li><a href="pictures/13.jpg"download="" ><img src="pictures/13.jpg" alt="img05"/></a></li>
+                        <li><a href="pictures/14.jpg" download=""><img src="pictures/14.jpg" alt="img05"/></a></li>
+                                         <li><a href="pictures/15.jpg" download=""><img src="pictures/15.jpg" alt="img05"/></a></li>
+      <li><a href="pictures/16.jpg"download="" ><img src="pictures/16.jpg" alt="img05"/></a></li>
+                        <li><a href="pictures/17.jpg" download=""><img src="pictures/17.jpg" alt="img05"/></a></li>
+	<li><a href="pictures/18.jpg"download="" ><img src="pictures/18.jpg" alt="img05"/></a></li>
+					<li><a href="pictures/19.jpg"download="" ><img src="pictures/19.jpg" alt="img05"/></a></li>
+				                    	<li><a href="pictures/20.jpg"download="" ><img src="pictures/20.jpg" alt="img05"/></a></li>
+				<li><a href="pictures/21.jpg"download="" ><img src="pictures/21.jpg" alt="img05"/></a></li>
+					<li><a href="pictures/22.jpg"download="" ><img src="pictures/22.jpg" alt="img05"/></a></li>
+                                    <li><a href="pictures/23.jpg"download="" ><img src="pictures/23.jpg" alt="img05"/></a></li>
+                             <li><a href="pictures/24.jp"download="" ><img src="pictures/24.jpg" alt="img05"/></a></li>
+                                                <li><a href="pictures/25.jpg" download=""><img src="pictures/25.jpg" alt="img05"/></a></li>
+                                                <li><a href="pictures/26.jpg"download="" ><img src="pictures/26.jpg" alt="img05"/></a></li>
+                                    <li><a href="pictures/27.jpg"download="" ><img src="pictures/27.jpg" alt="img05"/></a></li>
+					<li><a href="pictures/28.jpg"download="" ><img src="pictures/28.jpg" alt="img05"/></a></li>
+				            	<li><a href="pictures/29.jpg"download="" ><img src="pictures/29.jpg" alt="img05"/></a></li>
+					<li><a href="pictures/30.jpg"download="" ><img src="pictures/30.jpg" alt="img05"/></a></li>
+                                <li><a href="pictures/31.jpg" download="" ><img src="pictures/31.jpg" alt="img05"/></a></li>
+                                                    <li><a href="pictures/32.jpg" download="" ><img src="pictures/32.jpg" alt="img05"/></a></li>
+                                <li><a href="pictures/33.jpg" download=""  ><img src="pictures/33.jpg" alt="img05"/></a></li>
+	<li><a href="pictures/34.jpg" download="" ><img src="pictures/34.jpg" alt="img05" /></a></li>
+					<li><a href="pictures/35.jpg" download=""><img src="pictures/35.jpg" alt="img05"/></a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.cbpFWSlider.min.js"></script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpFWSlider( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 500,
+					// default transition easing
+					easing : 'ease'
+				}
+				- destroy:
+				$( selector ).cbpFWSlider( 'destroy' );
+				*/
+
+				$( '#cbp-fwslider' ).cbpFWSlider();
+
+			} );
+		</script>
+	</body>
+</html>

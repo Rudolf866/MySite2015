@@ -1,0 +1,118 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	color:#eee;
+	background:url('../img/page_bg.jpg') repeat-x #323232;
+	font:15px Calibri,Arial,sans-serif;
+	border-top:5px solid #212121;
+}
+
+#footer{
+	background-color:#212121;
+	position:fixed;
+	width:100%;
+	height:70px;
+	bottom:0;
+	left:0;
+}
+
+a.tzine,a.tzine:visited{
+	background:url("../img/tzine.png") no-repeat right top;
+	border:none;
+	color:#FCFCFC;
+	font-size:12px;
+	height:70px;
+	left:50%;
+	line-height:31px;
+	margin:23px 0 0 110px;
+	position:absolute;
+	top:0;
+	width:290px;
+}
+
+.tri{
+	border-color:transparent transparent #212121;
+	border-style:solid;
+	border-width:20px 17px;
+	height:0;
+	left:50%;
+	margin:-40px 0 0 -400px;
+	position:absolute;
+	top:0;
+	width:0;
+}
+
+h1{
+	font-size:20px;
+	font-weight:normal;
+	left:50%;
+	margin-left:-230px;
+	padding:25px 0;
+	position:absolute;
+	width:480px;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	border-bottom:1px dotted #97cae6;
+	color:#97cae6;
+}
+
+a:hover{
+	border-bottom:1px dashed transparent;
+}
+
+.clear{
+	clear:both;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+html, body{ font-family : Roboto; height: 100%; width: 100%; margin: 0;}
+
+
+.button {
+  background: #3D4C53;
+  margin : 15px 40px;
+  width : 200px;
+  height : 49px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(25, 24, 24, 0.24);
+}
+.kosuplicate-domouse {
+  position : relative;
+  width : 395px;
+  height : 97px;
+  margin-top: -70px;
+  padding-top: 3px;
+  background : #26A69A;
+  left : -249px;
+  transition : .3s;
+}
+.datext-atribute {
+  color : yellow;
+    text-align: center;
+  transition : .3s;
+}
+.transitions-andatutran {
+  margin-top : 63px;
+  margin-right : -200px;
+  color : #f3f3f3;
+}
+.button:hover .kosuplicate-domouse{ 
+  left: -130px;
+}
+.button:hover .datext-atribute{ 
+  margin-left : 70px;
+}
+.button:active { 
+  box-shadow: 0px 4px 5px rgba(25, 24, 24, 0.34);
+}

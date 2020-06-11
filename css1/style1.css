@@ -1,0 +1,222 @@
+/*    GRID   */
+
+.container
+{
+    width: 1140px;
+    margin-left: auto;/* центрируется по левому краю*/
+    margin-right: auto;/*центрируется по правому краю*/
+}
+.row
+{
+    
+}
+.row:after
+{
+    clear: both;
+    content: "";
+    display: table;
+}
+.col4
+{
+    width: 360px;
+    margin-right: 30px;
+    float: left;/* выстраиваются в один ряд*/
+}
+.col4:last-child
+{
+    margin-right: 0px;
+}
+/* HEADER*/
+
+.header
+{
+    background: black;
+    color:yellow;
+    background-image:url(../images/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.headertitle
+{
+    font-size: 56px;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+.headerslogan
+{
+    font-size: 28px;
+    line-height: 56px;
+}
+.headerarrow
+{
+    font-size: 48px;
+ 
+    width: 50px;
+    height: 30px;
+    margin-left: -30px;
+   
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+}
+/*  BODY  */
+.title1
+{
+    font-size: 46px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.img
+{
+    margin-bottom: 17px;
+    
+}
+.title
+{
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.text
+{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.portfolio
+{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.portfolio_item
+{
+    margin-bottom: 20px;
+}
+.title a
+{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+.title a:hover
+{
+    color:#0052C2;
+    border-color:rgba(0,82,194,0.3);
+}
+#body_button{
+  background: #000;
+  height: 0px;
+  margin-top: -150px;
+  padding: 550;
+  color: #ddf;
+  background-color: #112;
+  text-align: center;
+  padding-top: 10px;
+}
+.button_hola,
+.button_hola::before,
+.button_hola::after,
+.button_hola span,
+.button_hola span::before,
+.button_hola span::after
+{
+  transition: all ease .5s;
+}
+ 
+.button_hola{
+  position: relative;
+    
+  display: inline-block;
+  padding: 0.3em;
+ /* margin-top: 10em;*/
+  border: solid 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+ 
+.button_hola:hover
+{
+  box-shadow: 0 0 5em .5em rgba(50,50,150,0.5);
+}
+ 
+.button_hola span
+{
+  display: inline-block;
+  width: 110%;
+  padding: 15px;
+}
+ 
+.button_hola:hover span
+{
+  background-color: #fff;
+  color: #112;
+}
+ 
+.button_hola::before,
+.button_hola::after,
+.button_hola span::before,
+.button_hola span::after
+{
+  content: '';
+  position: absolute;
+  border: 1px;
+}
+ 
+.button_hola::before,
+.button_hola span::before
+{
+  border-style: solid none;  
+}
+ 
+.button_hola::before,
+.button_hola span::after{      
+  left: 0;
+  top: -0.4em;
+  width: 140%; 
+  height: calc(100% + 0.8em);
+}
+ 
+.button_hola::after,
+.button_hola span::after
+{
+  border-style: none solid;   
+}
+ 
+.button_hola::after,
+.button_hola span::before
+{
+  top: 0px;
+  left: 1em;
+  height: 90%;
+  width: calc(100% + 0.8em); 
+}
+ 
+.button_hola:hover::after,
+.button_hola:hover span::after
+{
+  transform: scaleY(0);
+}
+ 
+.button_hola:hover::before,
+.button_hola:hover span::before
+{
+  transform: scaleX(0);
+}
+ 
+.button_hola:hover span::after,
+.button_hola:hover span::before
+{
+  opacity: 0;
+}
+a:hover
+{
+    color:darkorange;
+        
+}
